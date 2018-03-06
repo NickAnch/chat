@@ -1,0 +1,367 @@
+html {
+    height: 100%;
+    background-image: url(img/images.jpg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+body {
+    font: 16px Arial, sens-serif;
+}
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+ /* HEADER*/
+header{
+    background: #000;
+    background: linear-gradient(to top, #000 , #302f2f);
+}
+h1{
+    text-transform: uppercase;
+    font: 23px Arial, sens-serif;
+    padding-top: 25px;
+    color:#2fc5ff;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.logo {
+    float:left; 
+    margin-right: 160px;
+}
+
+
+#touch-menu{
+    padding: 15px 0px 15px 20px;
+    margin-right: 60px;
+}
+.nav li{
+    float: left;
+    margin-right: 60px;
+    padding-top: 28px;
+    
+}
+
+.nav li:last-child{ margin-right: 0;}
+.nav li a:hover,
+#touch-menu:hover{
+    color:#2fc5ff;
+    
+}
+.nav li a,
+#touch-menu{
+    text-transform: uppercase;
+    font: 20px Arial, sens-serif;
+    color: #fff;
+    display: block;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+#touch-menu {
+    display: none;
+}
+
+@media (max-width:940px) {
+    .nav {display: none;}
+    .logo {display: none;}
+    .nav li {
+        padding-top: 0px;
+        float: none;
+    }
+    
+    .nav li a{
+        color: #fff;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .nav li:first-child a{margin-top: 0;}
+    #touch-menu{display: block;}
+}
+ /* END OF HEADER*/
+ /*CHAT*/
+.notify{
+    padding: 15px;
+    margin: 55px auto 5px auto;
+    width: 815px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+.notify a{
+    color:#2fc5ff;
+}
+.notify a:hover {
+    text-decoration: underline;
+}
+.chat {
+    margin: 0 auto;
+    width: 815px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    color: #fff;
+    height: 500px;
+    overflow-y: auto;
+}
+.dialog_icon{
+    display: inline-block;
+    padding: 5px;
+}
+.wrapperMsg{
+    position: relative;
+    height: auto;
+   
+}
+.wrapperMsg:nth-child(2n){
+    background: #2b2b2b;
+}
+#message {
+    width: 745px;
+    line-height: 25px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    
+}
+.names{
+    color: #e0cf4c;
+    font-weight: bold;
+}
+.countries{
+    color: #3ad644;
+    font-style: italic;
+}
+.msgDate{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    font: 10px Arial, sens-serif;
+    color: #545454;
+}
+ /*END OF CHAT*/
+ /*REGISTRATION*/
+
+.reg-form{
+    padding: 15px;
+    margin: 110px auto 5px auto;
+    width: 400px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*END OF REGISTRATION*/
+/*LOGIN*/
+.login-form, .reg-form{
+    padding: 25px;
+    margin: 100px auto 5px auto;
+    width: 500px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+.reg-form{
+    padding: 25px;
+    margin: 70px auto 5px auto;
+    width: 500px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+.login-form a, .reg-form a{
+    color: #bfbfbf;
+}
+.login-form a:hover ,.reg-form a:hover{
+    color: #bfbfbf;
+    text-decoration: underline;
+}
+h2{
+  font: 30px Arial, sens-serif;
+}
+
+#login, #pass, #pass_rep, #country {
+    border: none;
+    width: 360px;
+    height: 50px;
+    padding: 0 20px;
+    margin: 20px;
+    color: #555;
+    background: #fff;
+    font-size: 16px;
+}
+#login:hover, #pass:hover, #pass_rep:hover, #country:hover{
+    background: #e6e6e6;
+}
+
+.btn{
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+    color: #f0f2f2;
+    font: 16px Arial, sens-serif;
+    background: #2fc5ff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.btn:hover , #btnSend:hover{
+    background: #02baba;
+    color: #000;
+    
+}
+input::-moz-placeholder{
+	color: #a8a8a8;
+} 
+input::-webkit-input-placeholder{
+	color: #a8a8a8;
+}
+
+/* END OF LOGIN*/
+#txtMessage{
+    margin-top: 55px;
+    margin-bottom: 7px;
+    margin-left: 62px;
+    white-space: nowrap;
+    overflow: hidden;
+    font: 16px Arial, sens-serif;
+    padding: 10px;
+    padding-top: 11px;
+    width: 706px;
+    background: #1e1f1f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 45px;
+    resize: none;
+    line-height: 20px;
+}
+#btnSend{
+    float: right;
+    margin-right: 65px;
+    margin-top: 57px;
+    padding: 11px 30px;
+    border: none;
+    color: #f0f2f2;
+    font: 16px Arial, sens-serif;
+    background: #2fc5ff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.EnterMsg{
+    color: #fff;
+    position: absolute;
+    top: 140px;
+    left: 405px;
+}
+
+.wrapRules {
+    margin: 95px auto 5px auto;
+    width: 815px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    color: #fff;
+}
+.wrapRules h2{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.wrapRules h3{
+    padding: 5px 20px 15px 10px;
+}
+.wrapRules p{
+    padding: 5px 50px 10px 30px;
+}
+.wrapTable{
+    margin: 95px auto 5px auto;
+    width: 815px;
+    background: #1e1f1f;
+    border-radius: 5px;
+    padding: 10px;
+}
+.wrapTable span{
+    color: #fff;
+}
+.UsersTable{
+    border: 2px solid #fff;
+    color: #fff;
+    width: 750px;
+    margin: 10px;
+    border-radius: 5px;
+}
+td {
+    padding: 3px;
+    border: 1px solid #fff;
+}
+
+.delUser{
+    padding: 11px 30px;
+    border: none;
+    color: #f0f2f2;
+    font: 16px Arial, sens-serif;
+    background: #f03737;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.inputDelUser{
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    padding: 0 20px;
+    background: #fff;
+    font-size: 16px;
+}
